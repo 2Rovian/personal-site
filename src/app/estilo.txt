@@ -1,0 +1,8 @@
+| Papel           | Cor Tailwind                                         |
+| --------------- | ---------------------------------------------------- |
+| Fundo           | `bg-stone-50`                                        |
+| Texto principal | `text-stone-800`                                     |
+| Texto leve      | `text-stone-500`                                     |
+| Bordas          | `border-stone-200`                                   |
+| Destaques       | `bg-stone-100`                                       |
+| Botões          | `bg-stone-700` + `hover:bg-stone-600` + `text-white` |
