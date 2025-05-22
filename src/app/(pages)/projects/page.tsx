@@ -3,7 +3,7 @@ import HeaderComp from "@/app/components/HeaderComp";
 export default function ProjectsPage(){
     return(
         <div>
-            <HeaderComp />
+            {/* <HeaderComp /> */}
             <p>show</p>
         </div>
     )

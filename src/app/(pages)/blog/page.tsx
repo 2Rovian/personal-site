@@ -3,7 +3,7 @@ import HeaderComp from "@/app/components/HeaderComp";
 export default function BlogPage(){
     return(
         <div>
-            <HeaderComp />
+            {/* <HeaderComp /> */}
             <p>massa</p>
         </div>
     )

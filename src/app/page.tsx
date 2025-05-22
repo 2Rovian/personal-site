@@ -1,9 +1,10 @@
+import Link from "next/link";
 import HeaderComp from "./components/HeaderComp";
 
 export default function Home() {
   return (
     <div>
-      <HeaderComp />
+      {/* <HeaderComp /> */}
       <main className="mx-auto h-fit mt-4 max-w-4xl w-[90%] flex flex-col gap-y-4">
 
         <div className="div-design">
@@ -19,8 +20,26 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="div-design">
-          <p>About Me</p>
+        <div className="flex gap-x-4">
+          <div className="div-design flex-1 px-3 py-1">
+            <p>Ultimamente tenho tido um certo interesse por estatística. Pretendo levar mais a sério</p>
+          </div>
+
+          {/* <Link
+            href='/about-me'
+            className="div-design px-4 py-2 hover:bg-stone-950 hover:text-white duration-200 font-medium ease-in-out text-lg size-fit"
+          >
+            <span>About Me</span>
+          </Link> */}
+          <div className="div-design size-fit">
+            <Link
+              href='/about-me'
+              className="px-4 py-2 block hover:bg-stone-950 hover:text-white duration-200 font-medium ease-in-out text-lg"
+            >
+              About Me
+            </Link>
+          </div>
+
         </div>
 
       </main>

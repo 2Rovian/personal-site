@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { IoTriangle } from "react-icons/io5";
+import HeaderNavComp from './HeaderNavComp';
 
 export default function HeaderComp() {
 
@@ -32,7 +33,9 @@ export default function HeaderComp() {
                         alt="Lain"
                         width={80}
                         height={80}
-                        className="rounded-full hover:shadow-2xl shadow-blue-950 cursor-pointer"
+                        className="rounded-full hover:shadow-2xl shadow-blue-950
+                        filter grayscale group-hover:grayscale-0 transition-all duration-300
+                        "
                     />
                     <div className='absolute top-21 -left-18 bg-blue-950 hidden group-hover:block text-blue-50 px-2 py-1 rounded-xs '>
                         <span>Let's all love lain</span>
@@ -40,7 +43,7 @@ export default function HeaderComp() {
                     </div>
                     
                 </div>
-                <nav className="flex justify-between ">
+                {/* <nav className="flex justify-between ">
                     <Link href='/' className="px-4 py-2 cursor-pointer hover:bg-stone-950 hover:text-white duration-200 font-medium ease-in-out text-lg border-t-1 border-r-1">Home</Link>
 
                     <ul className="flex flex-row text-lg border-t-1 border-l-1 font-bold">
@@ -57,7 +60,8 @@ export default function HeaderComp() {
                             <li className="px-4 py-2 cursor-pointer hover:bg-stone-950 hover:text-white duration-200 font-medium ease-in-out">Blog</li>
                         </Link>
                     </ul>
-                </nav>
+                </nav> */}
+                <HeaderNavComp />
             </div>
         </header>
     )
