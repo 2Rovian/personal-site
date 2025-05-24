@@ -6,7 +6,7 @@ import HeaderNavComp from './HeaderNavComp';
 export default function HeaderComp() {
 
     return (
-        <header className="mx-auto h-[200px] mt-6 max-w-4xl w-[90%] div-design rounded-t-xl">
+        <header className=" h-[200px] mt-6  div-design rounded-t-xl">
             <div className="size-full flex flex-col relative">
                 <div className="flex flex-col px-5 flex-1 pt-3 w-fit font-semibold">
                     <span className=" cursor-pointer hover:underline mt-0 text-6xl font-bold ">Rovian.</span>
@@ -29,12 +29,12 @@ export default function HeaderComp() {
 
                 <div className='absolute top-3 right-5 group'>
                     <Image
-                        src="/lain/lain2.jpg"
+                        src="/lain/imgs/letsalllovelain-removebg.png"
                         alt="Lain"
                         width={80}
                         height={80}
                         className="rounded-full hover:shadow-2xl shadow-blue-950
-                        filter grayscale group-hover:grayscale-0 transition-all duration-300
+                        filter grayscale group-hover:grayscale-0 group-hover:sepia transition-all duration-300
                         "
                     />
                     <div className='absolute top-21 -left-18 bg-blue-950 hidden group-hover:block text-blue-50 px-2 py-1 rounded-xs '>

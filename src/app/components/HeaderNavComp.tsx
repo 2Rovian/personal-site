@@ -16,7 +16,7 @@ export default function HeaderNavComp() {
     return (
         <nav className="flex justify-between">
             <ul className="flex text-lg border-t-1 border-r-1 font-bold">
-                <li className="list-none border-r-1">
+                <li className="list-none ">
                     <Link href="/" className={navLinkClass('/')}>Home</Link>
                 </li>
             </ul>

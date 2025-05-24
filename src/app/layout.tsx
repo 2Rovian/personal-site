@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import HeaderComp from "./components/HeaderComp";
 import FooterComp from "./components/FooterComp";
+import ImagesBgComp from "./ImagesBgComp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative z-0`}
       >
-        <HeaderComp />
-        {children}
-        <FooterComp />
+        <div className='div-responsividade relative z-10'>
+          <HeaderComp />
+          {children}
+          <FooterComp />
+        </div>
+        <ImagesBgComp />
       </body>
     </html>
   );

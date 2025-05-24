@@ -13,17 +13,17 @@ export default function CreditosComp() {
     ]
 
     return (
-        <section className="mt-4 max-w-4xl mx-auto w-[90%] flex flex-col sm:grid grid-cols-2 gap-4 overflow-hidden">
+        <section className="mt-4 flex flex-col sm:grid grid-cols-2 gap-4 ">
             {/* Bloco de créditos */}
-            <div className='div-design'>
+            <div className='div-design overflow-hidden'>
                 <div className="border-b-1 px-3 py-1">
                     <span className="font-semibold">creditos.</span>
                 </div>
 
-                <div className="px-3 py-1">
-                    <p>Este site tem grande inspiração nesses outros_</p>
+                <div className="px-3 py-1 ">
+                    <p className='w-[85%]'>Este site tem grande inspiração nesses outros_</p>
 
-                    <div className="flex gap-x-2 items-center mt-2">
+                    <div className="flex gap-x-2 items-center mt-2 relative ">
                         {creditosArray.map((item, index) => (
                             <a
                                 key={index}
@@ -42,49 +42,50 @@ export default function CreditosComp() {
                                 </div>
                             </a>
                         ))}
+                        
+                        <div className='absolute -right-5 -bottom-1'>
+                            <Image
+                                src={'/lain/imgs/lainSidePfp-removebg.png'}
+                                width={90}
+                                height={90}
+                                alt={'lain sidepfp'}
+                                className='filter grayscale hover:grayscale-0 hover:sepia transition-all duration-300
+                            
+                                '
+                            />
+                        </div>
+                        
                     </div>
                 </div>
             </div>
 
-            <div className='hidden sm:flex items-center bg-stone-950'>
-                
+            {/* Div de Gifs */}
+            <div className='hidden sm:flex items-center bg-stone-950 group hover:outline-2 outline-indigo-400'>
+
                 {lainGifsArray.map((item, index) => (
                     <Image
-                    src={item.sourceGif}
-                    width={135}
-                    height={135}
-                    className='image-filter w-1/3 h-full object-cover'
-                    alt={item.altDesc}
-                    key={index}
-                />
+                        src={item.sourceGif}
+                        width={135}
+                        height={135}
+                        className='object-cover object-center filter grayscale group-hover:grayscale-0 transition-all duration-300
+                        w-1/3 h-full '
+                        alt={item.altDesc}
+                        key={index}
+                    />
                 ))}
             </div>
-            <div className=' flex sm:hidden items-center bg-stone-950'>
-                
-                <Image
-                    src={lainGifsArray[2].sourceGif}
-                    width={135}
-                    height={135}
-                    className='image-filter w-1/3 h-full object-cover'
-                    alt={lainGifsArray[2].altDesc}
-                    
-                />
-                <Image
-                    src={lainGifsArray[2].sourceGif}
-                    width={135}
-                    height={135}
-                    className='image-filter w-1/3 h-full object-cover'
-                    alt={lainGifsArray[2].altDesc}
-                    
-                />
-                <Image
-                    src={lainGifsArray[2].sourceGif}
-                    width={135}
-                    height={135}
-                    className='image-filter w-1/3 h-full object-cover'
-                    alt={lainGifsArray[2].altDesc}
-                    
-                />
+            
+            <div className='flex sm:hidden items-center bg-stone-950 group hover:outline-2 outline-indigo-900'>
+                {Array(3).fill(null).map((_, index) => (
+                    <Image
+                        key={index}
+                        src={lainGifsArray[2].sourceGif}
+                        width={135}
+                        height={135}
+                        alt={lainGifsArray[2].altDesc}
+                        className='w-1/3 h-full object-cover object-center filter grayscale group-hover:grayscale-0 transition-all duration-300'
+                    />
+                ))}
             </div>
         </section>
     );

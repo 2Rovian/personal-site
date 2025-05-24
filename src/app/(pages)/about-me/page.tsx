@@ -4,7 +4,7 @@ export default function AboutPage(){
     return(
         <div>
             {/* <HeaderComp /> */}
-            <main className="div-design mx-auto h-fit mt-4 max-w-4xl w-[90%]">
+            <main className="div-design h-fit mt-4 ">
                 <p>This is the about page</p>
             </main>
         </div>
