@@ -26,3 +26,7 @@ body {
   animation: rotateShadow 64s infinite linear;
   @apply bg-white border border-stone-950;
 }
+
+.image-filter{
+  @apply object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-300;
+}

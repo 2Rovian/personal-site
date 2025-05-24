@@ -1,12 +1,12 @@
 import Link from "next/link";
 import HeaderComp from "./components/HeaderComp";
+import CreditosComp from "./components/CreditosComp";
 
 export default function Home() {
   return (
     <div>
       {/* <HeaderComp /> */}
       <main className="mx-auto h-fit mt-4 max-w-4xl w-[90%] flex flex-col gap-y-4">
-
         <div className="div-design">
           <div className="border-b-1 px-3 py-1">
             <span className="font-semibold">homepage.</span>
@@ -43,6 +43,7 @@ export default function Home() {
         </div>
 
       </main>
+      <CreditosComp />
     </div>
   );
 }

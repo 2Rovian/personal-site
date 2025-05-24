@@ -1,10 +1,11 @@
-import HeaderComp from "@/app/components/HeaderComp";
+
 
 export default function BlogPage(){
     return(
-        <div>
-            {/* <HeaderComp /> */}
-            <p>massa</p>
-        </div>
+        <main className='max-w-4xl w-[90%] mx-auto h-fit mt-4 div-design'>
+            <div>
+                Blogpage
+            </div>
+        </main>
     )
 }

@@ -12,7 +12,7 @@ export default function FooterComp() {
                     src="/lain/lain6.jpeg"
                     alt="Lain"
                     fill // preenche o container
-                    className="object-cover object-center filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="image-filter"
                 />
                 {/* <div className="absolute inset-0 bg-transparent group-hover:bg-stone-300/70 text-stone-950 flex items-center justify-center transition-all duration-300">
                     <p className="text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Texto ao passar o mouse</p>
